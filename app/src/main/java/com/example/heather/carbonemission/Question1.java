@@ -28,6 +28,7 @@ public class Question1 extends Fragment {
     private int value;
 
     private OnFragmentInteractionListener mListener;
+
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("household", value);    // Save current View's state here
@@ -48,14 +49,12 @@ public class Question1 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //if (getArguments() != null) {
-          //  mParam1 = getArguments().getInt(ARG_NUMBER_FAMILY);
-        //}
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.fragment_question1, container, false);
         EditText editTextName = (EditText) rootView.findViewById(R.id.inputFamilyNumber);
         editTextName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -68,7 +67,6 @@ public class Question1 extends Fragment {
                 return handled;
             }
         });
-        //savedInstanceState.putInt("household", value);
         return rootView;
     }
 
