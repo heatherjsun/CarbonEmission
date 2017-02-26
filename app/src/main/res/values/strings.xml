@@ -4,9 +4,16 @@
     <string name="section_format">Hello World from section: %1$d</string>
 
     //fragment_title
-    <string name="title">Welcome! Let's take a quiz...</string>
+    <string name="title">Welcome! Let\'s take a quiz...</string>
     <string name="instruct">Start by swiping left</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    //question 1
+    <string name="question1">How many people are in your household\?</string>
+
+    //question 2
+
+    //question 3
+
+    //question 4
+
 </resources>

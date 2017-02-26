@@ -27,7 +27,7 @@ public class title extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private OnFragmentInteractionListener mListener;
+    //private OnFragmentInteractionListener mListener;
 
     public title() {
         // Required empty public constructor
@@ -66,7 +66,7 @@ public class title extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_title, container, false);
     }
-
+/*
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
@@ -90,7 +90,7 @@ public class title extends Fragment {
         super.onDetach();
         mListener = null;
     }
-
+*/
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
