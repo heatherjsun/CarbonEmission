@@ -1,0 +1,42 @@
+ssues on Environment
+
+1)	People don’t know how much CO2 they’re producing
+2)	Don’t know how to reduce CO2 footprint
+
+App
+
+Start Off Quiz
+Takes quiz of person → tabbed quiz page by page (1 question per page) 
+Questions: 
+1)How many people in your household? 
+2)What is your electricity bill this month 
+Electricity CO2 = 0.527 kg/kWh 
+Natural Gas Bill 0.185 kg/kWh
+Heating Oil 2.96 kg/Litre
+Coal 3.26 kg/ kg of coal
+Wood 0.10 kg/kg of wood
+3)Size of your house – sq ft 
+-Calculate goal for each house based on current consumption: 
+Big house goal: 5000
+Medium house goal: 3300
+Small house goal: 1650 	
+4)On average how long do u spend traveling in a car/bus 
+5)How much of each produce u eat per day—meat, eggs, etc.
+6)End of Quiz: tells you your footprint  & pie chart of where you’re spending the most: shows you top 3 options you can save on 
+
+Goal Setter
+Sets a carbon emission goal of Y  tons per year (where Y = X - 5,  X is your current consumption i.e. your start off goal is to reduce consumption by 5 tons)  
+- Based on stuff u want to save: can tell u how much u saving by reducing ur AC temp by this much, by substituting meat with other protein, by not using plastic bag, replacing lightbulbs, by biking to work instead of taking car/bus  
+
+Daily Log 
+-smart system can detect how much electricity/water u using per day (connects to household appliances) → can send alerts to you to say switch off the light, or switches off for u?? 
+-how long you spent in car going to work: calculates CO2 you emitted today based on distance using location 
+- food log: tells u how much u emitting from eating meat 
+Total emissions today = ____ 
+
+
+Search
+You can search for categories
+In each category of stuff u want to buy:  
+Recommends environmentally friendly products
+and shops nearby that have them 
