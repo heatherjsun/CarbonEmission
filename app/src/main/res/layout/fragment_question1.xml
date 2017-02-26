@@ -16,6 +16,7 @@
         android:inputType="number"
         android:maxLines="1"
         android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/textView3"
         android:ems="10"
         tools:layout_marginTop="80dp" />
 

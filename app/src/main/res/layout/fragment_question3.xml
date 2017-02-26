@@ -2,13 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.heather.carbonemission.Question2">
+    tools:context="com.example.heather.carbonemission.Question3">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="How much was your electricity bill this month in dollars?" />
+        android:text="How long do you spend in an automobile per day?" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -16,10 +15,9 @@
         android:inputType="number"
         android:hint = "e.g. 20"
         android:ems="10"
-        android:id="@+id/editText3"
+        android:id="@+id/editText4"
         android:layout_alignParentTop = "true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:imeOptions="actionNext" />
-
+        android:imeOptions="actionNone" />
 </FrameLayout>
