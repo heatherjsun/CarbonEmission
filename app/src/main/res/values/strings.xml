@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CarbonEmission</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    //fragment_title
+    <string name="title">Welcome! Let's take a quiz...</string>
+    <string name="instruct">Start by swiping left</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
