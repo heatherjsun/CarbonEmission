@@ -3,6 +3,7 @@ package com.example.heather.carbonemission;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -24,29 +25,32 @@ import android.widget.TextView;
  */
 public class Question1 extends Fragment {
     private static final String ARG_NUMBER_FAMILY = "family";
-    private int mParam1;
+    private int value;
 
     private OnFragmentInteractionListener mListener;
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("household", value);    // Save current View's state here
+    }
 
     public Question1() {
         // Required empty public constructor
     }
 
-
-    public static Question1 newInstance(int family) {
+    public static Question1 newInstance() {
         Question1 fragment = new Question1();
-        Bundle args = new Bundle();
-        args.putInt(ARG_NUMBER_FAMILY, family);
-        fragment.setArguments(args);
+        //Bundle args = new Bundle();
+        //args.putInt(ARG_NUMBER_FAMILY, family);
+        //fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getInt(ARG_NUMBER_FAMILY);
-        }
+        //if (getArguments() != null) {
+          //  mParam1 = getArguments().getInt(ARG_NUMBER_FAMILY);
+        //}
     }
 
     @Override
@@ -59,11 +63,12 @@ public class Question1 extends Fragment {
             public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent){
                 boolean handled = false;
                 if (i == EditorInfo.IME_ACTION_NEXT) {
-                    int inputText = Integer.parseInt(textView.getText().toString());
+                    value = Integer.parseInt(textView.getText().toString());
                 }
                 return handled;
             }
         });
+        //savedInstanceState.putInt("household", value);
         return rootView;
     }
 

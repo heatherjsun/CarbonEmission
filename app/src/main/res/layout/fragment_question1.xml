@@ -8,19 +8,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/question1"
-        android:layout_gravity="center_vertical|center_horizontal|center"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"/>
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false" />
 
     <EditText
         android:id="@+id/inputFamilyNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="283dp"
+        android:layout_height="70dp"
         android:inputType="number"
-        android:text="enter number"
         android:ems="10"
-        android:imeOptions="actionNext"/>
+        android:imeOptions="actionNext"
+        android:textColorLink="@android:color/holo_green_dark"
+        tools:layout_marginTop="80dp" />
 
 
 </FrameLayout>
