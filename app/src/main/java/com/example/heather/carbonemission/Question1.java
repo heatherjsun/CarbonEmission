@@ -4,11 +4,14 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.TextView;
+
 
 //How many people are in your household?
 /**
@@ -23,7 +26,7 @@ public class Question1 extends Fragment {
     private static final String ARG_NUMBER_FAMILY = "family";
     private int mParam1;
 
-    //private OnFragmentInteractionListener mListener;
+    private OnFragmentInteractionListener mListener;
 
     public Question1() {
         // Required empty public constructor
@@ -49,9 +52,22 @@ public class Question1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_question1, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_question1, container, false);
+        EditText editTextName = (EditText) rootView.findViewById(R.id.inputFamilyNumber);
+        editTextName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent){
+                boolean handled = false;
+                if (i == EditorInfo.IME_ACTION_NEXT) {
+                    int inputText = Integer.parseInt(textView.getText().toString());
+                }
+                return handled;
+            }
+        });
+        return rootView;
     }
+
+
 
 
 
@@ -72,12 +88,14 @@ public class Question1 extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
     }
+*/
+
 
     @Override
     public void onDetach() {
         super.onDetach();
         mListener = null;
-    }*/
+    }
 
     /**
      * This interface must be implemented by activities that contain this

@@ -7,14 +7,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/question1" />
+        android:text="@string/question1"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
 
     <EditText
+        android:id="@+id/inputFamilyNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:text="enter number"
         android:ems="10"
-        android:id="@+id/editText"
         android:imeOptions="actionNext"/>
 
 
